@@ -6,7 +6,7 @@
 }
 
 .Post:hover {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 15px rgba(244, 124, 74, 0.3);
   transform: scale(0.98);
 }
 
