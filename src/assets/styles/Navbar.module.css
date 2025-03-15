@@ -47,7 +47,7 @@
 .SearchIcon {
   width: 18px;
   height: 18px;
-  display: block;
+  /* display: block; */
   object-fit: contain;
   justify-content: center;
 }
@@ -89,6 +89,7 @@
 .DropdownMenu li {
   padding: 8px 16px;
   white-space: nowrap;
+  
 }
 
 .DropdownMenu li:hover {
@@ -97,7 +98,6 @@
 }
 
 
-/* Sub-dropdown container */
 /* Sub-dropdown container */
 .SubDropdown {
   position: relative;
@@ -211,6 +211,11 @@
 
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
   .Logo {
     font-size: 16px;
   }
@@ -221,10 +226,53 @@
   .Button {
     font-size: 14px;
   }
-}
+  .SearchForm {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
 
+  .SearchInput {
+    width: 70%; /* Take more width */
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .SearchButton {
+    width: 30%;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .SearchForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .SearchInput {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+
+  .SearchButton {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
 @media (max-width: 375px) {
   .Navbar {
     padding: 12px 24px;
+  }
+  .SearchForm {
+    margin: 8px 0;
+  }
+
+  .SearchInput,
+  .SearchButton {
+    font-size: 12px;
+    padding: 0 8px;
   }
 }

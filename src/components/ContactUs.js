@@ -55,6 +55,17 @@ const ContactUs = () => {
             </form>
 
             {message && <p className={styles.successMessage}>{message}</p>}
+            {/* WhatsApp Button */}
+            <div className={styles.whatsappContainer}>
+                <a
+                    href="https://wa.me/923107420940?text=Hello, I would like to get more!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.whatsappButton}
+                >
+                    📱 Chat on WhatsApp
+                </a>
+            </div>
         </motion.section>
     );
 };

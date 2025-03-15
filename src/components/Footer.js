@@ -1,11 +1,12 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
-import { ReactComponent as Facebook } from '../assets/images/social/social-facebook.svg';
-import { ReactComponent as Twitter } from '../assets/images/social/social-twitter.svg';
+// import { ReactComponent as Facebook } from '../assets/images/social/social-facebook.svg';
+// import { ReactComponent as Twitter } from '../assets/images/social/social-twitter.svg';
 import { ReactComponent as Instagram } from '../assets/images/social/social-instagram.svg';
-import { ReactComponent as Youtube } from '../assets/images/social/social-youtube.svg';
-import { ReactComponent as Pinterest } from '../assets/images/social/social-pinterest.svg';
+import { ReactComponent as Tiktok } from '../assets/images/social/tiktok.svg';
+// import { ReactComponent as Youtube } from '../assets/images/social/social-youtube.svg';
+// import { ReactComponent as Pinterest } from '../assets/images/social/social-pinterest.svg';
 import styles from '../assets/styles/Footer.module.css';
 import logoImage from '../assets/images/noorlogo.png';
 const Footer = () => {
@@ -43,27 +44,27 @@ const Footer = () => {
         transition={{ type: 'spring', stiffness: 50 }}
       >
         <a
-          href="https://facebook.com/hendraaagil"
+          href="https://facebook.com/sudodb"
           target="_blank"
           rel="noreferrer"
         >
-          <Facebook />
+          <Tiktok />
         </a>
-        <a
+        {/* <a
           href="https://twitter.com/hendraaagil"
           target="_blank"
           rel="noreferrer"
         >
           <Twitter />
-        </a>
+        </a> */}
         <a
-          href="https://instagram.com/hendraaagil"
+          href="https://www.tiktok.com/@the_nooresh_art45?_t=ZN-8t3g5tf8qhi&_r=1"
           target="_blank"
           rel="noreferrer"
         >
           <Instagram />
         </a>
-        <a
+        {/* <a
           href="https://www.youtube.com/channel/UCy44Cn1aBo3LYrZsh2gKGIA"
           target="_blank"
           rel="noreferrer"
@@ -76,7 +77,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <Pinterest />
-        </a>
+        </a> */}
       </motion.div>
       <motion.div
         className={styles.Attribute}
@@ -87,7 +88,7 @@ const Footer = () => {
         <span>
           &copy; 2023 by THe NOORESH ART{' '}
           <a
-            href="https://github.com/hendraaagil/gift-store-landing-page"
+            href="https://github.com/syedissambukhari"
             target="_blank"
             rel="noreferrer"
           >
@@ -110,7 +111,7 @@ const Footer = () => {
         <span>
           Designed by{' '}
           <a
-            href="https://dribbble.com/ScratchCoders"
+            href="https://dribbble.com/"
             target="_blank"
             rel="noreferrer"
           >
