@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "title": "Gift Baskets",
+    "img": "/images/giftbasket.jpg",
+    "subcategories": [
+      { "id": 101, "title": "Chocolate Basket" },
+      { "id": 102, "title": "Dry Fruit Basket" },
+      { "id": 103, "title": "Makeup Basket" }
+    ]
+
+  },
+  {
+    "id": 2,
+    "title": "Gift Box",
+    "img": "/images/giftbox.jpeg",
+    "subcategories": [
+      { "id": 201, "title": "Birthday Gift" },
+      { "id": 202, "title": "Anniversary Gift" },
+      { "id": 203, "title": "Congratulations Gift" },
+      { "id": 204, "title": "Get Well Soon" },
+      { "id": 205, "title": "Festive Gift" },
+      { "id": 206, "title": "Chocolates & Candies" },
+      { "id": 207, "title": "Love & Romance" },
+      { "id": 208, "title": "Thank You Gift Box" }
+    ]
+
+  },
+  {
+    "id": 3,
+    "title": "Eid Baskets",
+    "img": "/images/eidbasket.jpeg",
+    "subcategories": [
+      { "id": 301, "title": "Mini Pack" },
+      { "id": 302, "title": "Standard Pack" },
+      { "id": 303, "title": "Premium Pack" },
+      { "id": 304, "title": "Ultimate Pack" }
+    ]
+
+  },
+  {
+    "id": 4,
+    "title": "Baby Baskets",
+    "img": "/images/baby.jpeg",
+    "subcategories": [
+      { "id": 401, "title": "Welcome Baby Basket" },
+      { "id": 402, "title": "It's Boy Basket" },
+      { "id": 403, "title": "It's Girl Basket" },
+      { "id": 404, "title": "Little Star Basket" },
+      { "id": 405, "title": "Tiny Teasures Basket" },
+      { "id": 406, "title": "Dreamland Basket" },
+      { "id": 407, "title": "Mom & Baby Combo" }
+    ]
+
+  },
+  {
+    "id": 5,
+    "title": "Weeding Accessories",
+    "img": "/images/wedding.jpeg",
+    "subcategories": [
+      { "id": 501, "title": "Nikkah pens" },
+      { "id": 502, "title": "Nikkah Topers" },
+      { "id": 503, "title": "Nikkah dupatta" },
+      { "id": 504, "title": "Nikkah plate" },
+      { "id": 505, "title": "Nikkah Certificate" },
+      { "id": 506, "title": "Dudh palai Glass" },
+      { "id": 507, "title": "Resin Coaster" },
+      { "id": 508, "title": "Qabool Hai Toppers" },
+      { "id": 509, "title": "Nikkah Treats" },
+      { "id": 510, "title": "Mehendi Treats" },
+      { "id": 511, "title": "Nikkah Cards" }
+
+    ]
+
+  },
+  {
+    "id": 6,
+    "title": "Wall Decor",
+    "img": "/images/decor.jpeg",
+    "subcategories": [
+      { "id": 601, "title": "Quote Frames" },
+      { "id": 602, "title": "Scenery Frames" },
+      { "id": 603, "title": "Photo Tiles" }
+    ]
+
+  },
+  {
+    "id": 7,
+    "title": "Customize Prints",
+    "img": "/images/prints.jpeg",
+    "subcategories": [
+      { "id": 701, "title": "Photo Frames" },
+      { "id": 702, "title": "Polaroid Pictures" },
+      { "id": 703, "title": "Printing Mugs" },
+      { "id": 704, "title": "Printing Cushions" },
+      { "id": 705, "title": "Wallet Cards" }
+    ]
+
+  },
+  {
+    "id": 8,
+    "title": "Bouquets",
+    "img": "/images/boqu.jpeg",
+    "subcategories": [
+      { "id": 801, "title": "Money Bouquet" },
+      { "id": 802, "title": "Flowers Bouquet" },
+      { "id": 803, "title": "Silk Rose Bouquet" },
+      { "id": 804, "title": "Chocolate Bouquet" },
+      { "id": 805, "title": "Makeup Bouquet" },
+      { "id": 806, "title": "Eidi Bouquet" },
+      { "id": 809, "title": "Pictures Bouquet" },
+      { "id": 810, "title": "Jumky Bouquet" }
+    ]
+
+  },
+  {
+    "id": 9,
+    "title": "Acrylic Box",
+    "img": "/images/arcylic.jpeg",
+    "subcategories": [
+      { "id": 901, "title": "Acrylic Bag" },
+      { "id": 902, "title": "Acrylic Chocolate Box" },
+      { "id": 903, "title": "Acrylic For Men" },
+      { "id": 904, "title": "Acrylic For Women" }
+    ]
+
+  }
+  
+]

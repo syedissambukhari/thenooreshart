@@ -1,0 +1,158 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 200px;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 48px;
+  width: 100%;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.Navigation a {
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.Navigation a:hover {
+  color: var(--primary);
+}
+
+.Navigation h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+  color: var(--primary);
+  cursor: default;
+}
+
+.Social {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 54px;
+  margin-bottom: 72px;
+  width: 35%;
+}
+
+.Social svg {
+  border-radius: 50%;
+  transition: 0.2s all ease-in-out;
+}
+
+.Social svg:hover {
+  background: var(--primary);
+}
+
+.Attribute span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Attribute a {
+  position: relative;
+  margin-left: 4px;
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+.Attribute span:last-child {
+  margin-top: 10px;
+}
+
+.Attribute a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid transparent;
+}
+
+.Attribute a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.Attribute a:first-child:hover::after {
+  width: 100%;
+}
+
+.Attribute a:last-child:hover::after {
+  width: 50%;
+}
+
+.Attribute a:hover::after {
+  border-bottom-color: var(--dark-gray);
+  transition: border-color 0s ease-out 0.1s, width 0.2s ease-out 0.1s;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .Social {
+    width: 45%;
+  }
+
+  .Footer span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding: 24px 150px;
+  }
+
+  .Social {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer {
+    padding: 24px 50px;
+  }
+
+  .Navigation {
+    padding: 48px 24px;
+  }
+
+  .Social {
+    width: 70%;
+  }
+}
+
+@media (max-width: 375px) {
+  .Footer {
+    padding: 24px;
+  }
+
+  .Navigation {
+    padding: 48px 12px;
+  }
+
+  .Social {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .Footer {
+    padding: 24px 0;
+  }
+
+  .Navigation {
+    padding: 48px 0;
+  }
+
+  .Social {
+    width: 80%;
+  }
+}

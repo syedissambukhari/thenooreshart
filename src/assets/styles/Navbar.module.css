@@ -1,0 +1,230 @@
+.Navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 3;
+  padding: 12px 48px;
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--light-gray);
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+.SearchForm {
+  display: flex;
+  align-items: normal;
+  margin: 0 20px;
+  height: 30px; /* Fixed height for consistency */
+}
+
+.SearchInput {
+  height: 100%;
+  padding: 0 12px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #f47c4a;
+  outline: none;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  
+}
+
+.SearchButton {
+  height: 100%;
+  padding: 0 12px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f47c4a;
+  background-color: #ffffff;
+  color: #f47c4a;
+  cursor: pointer;
+}
+
+.SearchIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+  justify-content: center;
+}
+
+/* Dropdown container */
+.Dropdown {
+  position: relative;
+  
+}
+
+.DropdownToggle {
+  
+  cursor: pointer;
+  padding: 10px;
+  color: var(--dark-gray);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.DropdownMenu {
+  border: 1px solid #f47c4a;
+  display: none;
+  list-style: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px 0;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.Dropdown:hover .DropdownMenu {
+  display: block;
+}
+
+.DropdownMenu li {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.DropdownMenu li:hover {
+  background-color: #f47c4a;
+  color: #fff;
+}
+
+
+/* Sub-dropdown container */
+/* Sub-dropdown container */
+.SubDropdown {
+  position: relative;
+}
+
+/* Sub-dropdown menu */
+.SubDropdownMenu {
+  border: 1px solid #f47c4a;
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #f47c4a transparent;
+}
+
+/* Show sub-dropdown on hover */
+.SubDropdown:hover .SubDropdownMenu {
+  display: block;
+}
+
+/* Sub-dropdown items */
+.SubDropdownMenu li {
+  padding: 8px 16px;
+  white-space: nowrap;
+  color: var(--dark-gray);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.SubDropdownMenu li:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+/* WebKit scrollbar styling */
+.SubDropdownMenu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.SubDropdownMenu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.SubDropdownMenu::-webkit-scrollbar-thumb {
+  background-color: #f47c4a;
+  border-radius: 10px;
+}
+
+
+.Logo {
+  width: 100px; 
+  height: auto; 
+  /* font-family: 'Homemade Apple', cursive; */
+  /*font-size: 18px; */
+  /* color: var(--dark-gray); */
+  cursor: pointer;
+}
+.FooterLogo {
+  width: 80px; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.Link {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.Link a {
+  color: var(--dark-gray);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.Link a:hover,
+.Link a.active {
+  color: var(--primary);
+}
+
+.Button {
+  padding: 10px 20px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.Button:hover {
+  color: var(--light-gray);
+  background-color: var(--primary);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .Logo {
+    font-size: 16px;
+  }
+  .FooterLogo {
+    font-size: 16px;
+  }
+  .Link a,
+  .Button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Navbar {
+    padding: 12px 24px;
+  }
+}

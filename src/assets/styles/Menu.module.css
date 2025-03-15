@@ -1,0 +1,60 @@
+.Menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 96px;
+  background-color: var(--light-gray);
+  width: 100%;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.Menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.Menu li {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.Menu li a {
+  color: var(--dark-gray);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.Menu li a:hover,
+.Menu li a.active {
+  color: var(--primary);
+}
+
+.Menu li a,
+.Button {
+  font-size: 14px;
+}
+
+.Button {
+  margin-bottom: 36px;
+  padding: 10px 20px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.Button:hover {
+  color: var(--light-gray);
+  background-color: var(--primary);
+}

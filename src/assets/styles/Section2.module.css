@@ -1,0 +1,109 @@
+.Section_Two {
+  display: flex;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  cursor: default;
+}
+
+.Left,
+.Right {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.Left {
+  z-index: 1;
+}
+
+.Left img {
+  width: 100%;
+  height: 100%;
+}
+
+.Right {
+  padding: 100px;
+}
+
+.Right h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.Right p {
+  margin-bottom: 72px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.Right a {
+  padding: 10px 40px;
+  background-color: var(--light-gray);
+  color: var(--primary);
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.Right a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1280px) {
+  .Right {
+    padding: 72px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Right {
+    padding: 48px;
+  }
+
+  .Right h2 {
+    font-size: 28px;
+  }
+
+  .Right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Right {
+    padding: 32px;
+  }
+
+  .Right h2 {
+    font-size: 24px;
+  }
+
+  .Right p,
+  .Right a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Section_Two {
+    flex-direction: column;
+  }
+
+  .Left {
+    order: 2;
+  }
+
+  .Left,
+  .Right {
+    width: 100%;
+  }
+
+  .Right {
+    order: 1;
+    padding-bottom: 48px;
+  }
+}

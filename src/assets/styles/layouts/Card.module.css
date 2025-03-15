@@ -1,0 +1,65 @@
+.Card {
+  background-color: var(--light-gray);
+  width: 270px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Card:hover {
+  background-color: var(--white);
+  filter: drop-shadow(10px 10px 15px rgba(244, 124, 74, 0.3));
+  transform: scale(0.98);
+}
+
+.Card img {
+  width: 100%;
+}
+
+.Card div {
+  padding: 24px;
+}
+
+.Card h3 {
+  padding-bottom: 72px;
+  cursor: default;
+}
+
+.Card h3,
+.Card a {
+  margin: 0;
+}
+
+.Card a {
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.Card a:hover {
+  color: var(--primary);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .Card {
+    width: 200px;
+  }
+
+  .Card a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card h3 {
+    font-size: 16px;
+  }
+
+  .Card a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Card {
+    width: 150px;
+  }
+}
