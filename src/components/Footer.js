@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
-// import { ReactComponent as Facebook } from '../assets/images/social/social-facebook.svg';
+import { ReactComponent as Facebook } from '../assets/images/social/social-facebook.svg';
 // import { ReactComponent as Twitter } from '../assets/images/social/social-twitter.svg';
 import { ReactComponent as Instagram } from '../assets/images/social/social-instagram.svg';
 import { ReactComponent as Tiktok } from '../assets/images/social/tiktok.svg';
@@ -44,21 +44,21 @@ const Footer = () => {
         transition={{ type: 'spring', stiffness: 50 }}
       >
         <a
-          href="https://facebook.com/sudodb"
+          href="https://www.tiktok.com/@the_nooresh_art45?_t=ZN-8t3g5tf8qhi&_r=1"
           target="_blank"
           rel="noreferrer"
         >
           <Tiktok />
         </a>
-        {/* <a
-          href="https://twitter.com/hendraaagil"
+        <a
+          href="https://www.facebook.com/share/16NinFK9Hc/"
           target="_blank"
           rel="noreferrer"
         >
-          <Twitter />
-        </a> */}
+          <Facebook />
+        </a>
         <a
-          href="https://www.tiktok.com/@the_nooresh_art45?_t=ZN-8t3g5tf8qhi&_r=1"
+          href="https://www.instagram.com/the_nooresh_art"
           target="_blank"
           rel="noreferrer"
         >
