@@ -1,0 +1,23 @@
+.BlogDetail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .BlogDetail h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .BlogDetail .content {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  

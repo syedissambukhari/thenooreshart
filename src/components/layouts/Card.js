@@ -1,14 +1,13 @@
-import { Link } from 'react-scroll';
-
+import { Link } from 'react-router-dom';
 import styles from '../../assets/styles/layouts/Card.module.css';
 
-const Card = ({ title, imgSrc }) => {
+const Card = ({ id, title, imgSrc }) => {
   return (
     <div className={styles.Card}>
       <img src={imgSrc} alt={`${title} Illustration`} />
       <div>
         <h3>{title}</h3>
-        <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+        <Link to={`/project/${id}`}>
           See More ›
         </Link>
       </div>

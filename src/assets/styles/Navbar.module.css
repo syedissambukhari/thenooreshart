@@ -276,3 +276,44 @@
     padding: 0 8px;
   }
 }
+
+
+
+
+
+
+
+
+.MobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--light-gray);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.MobileMenu .SearchForm {
+  width: 90%;
+  margin-top: 15px;
+}
+
+.MobileMenu .SearchInput {
+  width: 100%;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.MobileMenu .SearchButton {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

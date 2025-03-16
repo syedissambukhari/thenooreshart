@@ -1,6 +1,4 @@
-import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-
 import posts from '../assets/data/posts.json';
 import blogImg from '../assets/images/blog.webp';
 import styles from '../assets/styles/Blogs.module.css';
@@ -39,9 +37,6 @@ const Blogs = ({ id }) => {
         <div>
           <span>Mr. John Doe</span>
           <h2>The best way to wish your wife</h2>
-          <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
-            Read More
-          </Link>
         </div>
       </motion.div>
       <motion.div
@@ -51,7 +46,7 @@ const Blogs = ({ id }) => {
         transition={{ type: 'spring' }}
       >
         {posts.map((post) => (
-          <Post key={post.id} title={post.title} content={post.content} />
+          <Post key={post.id} id={post.id} title={post.title} content={post.content} />
         ))}
       </motion.div>
     </div>
