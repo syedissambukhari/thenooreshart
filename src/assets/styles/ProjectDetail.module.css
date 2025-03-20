@@ -1,46 +1,126 @@
 .ProjectDetail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #f8f9fa;
-    padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+
+.Container {
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.Title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.Description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.Subcategories {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.SubcategoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.SubcategoryCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px 100px;
+  margin-bottom: 40px;
+  transition: transform 0.2s ease-in-out;
+  width: 100;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+
+}
+
+
+.SubcategoryImage {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.SubcategoryContent {
+  width: 50%;
+  text-align: left;
+  padding: 0 20px;
+}
+
+
+.SubcategoryName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.SubcategoryDescription {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .Subcategories {
+      gap: 30px;
   }
-  
-  .Container {
-    max-width: 800px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .CategoryTitle {
+      font-size: 2rem;
   }
-  
-  .Title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+
+  .CategoryDescription {
+      font-size: 1rem;
   }
-  
-  .Image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
+
+  .SubcategoryCard {
+      max-width: 300px;
   }
-  
-  .Description {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .CategoryTitle {
+      font-size: 1.8rem;
   }
-  
-  .NotFound {
-    text-align: center;
-    font-size: 1.5rem;
-    color: red;
-    margin-top: 50px;
+
+  .SubcategoryCard {
+      max-width: 100%;
   }
-  
+}

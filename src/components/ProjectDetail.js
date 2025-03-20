@@ -18,8 +18,24 @@ const ProjectDetail = () => {
       <div className={styles.ProjectDetail}>
         <div className={styles.Container}>
           <h1 className={styles.Title}>{project.title}</h1>
-          <img className={styles.Image} src={project.img} alt={project.title} />
+          {/* <img className={styles.Image} src={project.img} alt={project.title} /> */}
           <p className={styles.Description}>{project.description}</p>
+
+          {/* Subcategories Section */}
+          {project.subcategories && project.subcategories.length > 0 && (
+            <div className={styles.Subcategories}>
+              {/* <h2 className={styles.SubcategoryTitle}>Subcategories</h2> */}
+              <div className={styles.SubcategoryGrid}>
+                {project.subcategories.map(sub => (
+                  <div key={sub.id} className={styles.SubcategoryCard}>
+                    <img className={styles.SubcategoryImage} src={sub.img || project.img} alt={sub.title} />
+                    <h3 className={styles.SubcategoryName}>{sub.title}</h3>
+                    <p className={styles.SubcategoryDescription}>{sub.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <Footer />
