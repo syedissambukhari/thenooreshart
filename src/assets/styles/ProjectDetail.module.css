@@ -1,5 +1,4 @@
 .ProjectDetail {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,14 +98,6 @@
 @media (max-width: 1024px) {
   .Subcategories {
       gap: 30px;
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #f8f9fa;
-    padding: 130px 20px;
->>>>>>> 4a29fa190cee0851d1aa75815968581d1526acd5
   }
 }
 
