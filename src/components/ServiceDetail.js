@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import services from '../assets/data/services.json';
 import styles from '../assets/styles/ProjectDetail.module.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const ProjectDetail = () => {
   const { id } = useParams();
